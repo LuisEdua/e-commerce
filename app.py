@@ -45,10 +45,22 @@ class OrderProduct(db.Model):
     product = db.relationship('Product', backref=db.backref('order_products', lazy=True))
     order = db.relationship('Order', backref=db.backref('order_products', lazy=True))
 
+class review(db.Model):
+    __tablename__ = 'reviews'
+    id = db.Column(db.Integer, primary_key=True)
+    product_id = db.Column(db.Integer, db.ForeignKey('products.id'), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    comment = db.Column(db.Text, nullable=False)
+    rating = db.Column(db.Integer, nullable=False)
+
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
 @app.route('/create_database')
-def hello_world():  # put application's code here
+def create_database():  # put application's code here
     db.create_all()
-    return 'database created'
+    return 'Database created!'
 
 
 if __name__ == '__main__':
