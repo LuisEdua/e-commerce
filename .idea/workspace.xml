@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="099448cd-41db-48c3-b331-77e0d2616896" name="Changes" comment="[Create] database">
+    <list default="true" id="099448cd-41db-48c3-b331-77e0d2616896" name="Changes" comment="[CREATE] requirements.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +95,7 @@
       <workItem from="1705534381051" duration="259000" />
       <workItem from="1705542518097" duration="4014000" />
       <workItem from="1705596032557" duration="193000" />
-      <workItem from="1705642738087" duration="951000" />
+      <workItem from="1705642738087" duration="1334000" />
     </task>
     <task id="LOCAL-00001" summary="[Create] project">
       <option name="closed" value="true" />
@@ -130,7 +129,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705552469309</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[UPDATE] database">
+      <option name="closed" value="true" />
+      <created>1705643799392</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705643799392</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[CREATE] requirements.txt">
+      <option name="closed" value="true" />
+      <created>1705644070932</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705644070932</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +165,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[Create] project" />
     <MESSAGE value="[Create] database" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Create] database" />
+    <MESSAGE value="[UPDATE] database" />
+    <MESSAGE value="[CREATE] requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="[CREATE] requirements.txt" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/flaskProject$flaskProject.coverage" NAME="flaskProject Coverage Results" MODIFIED="1705643688047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
