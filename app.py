@@ -1,12 +1,12 @@
-from flask import Flask
+from flask import Flask, request, jsonify  # Asegúrate de tener esta línea
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-db_user = 'root'
-db_password = 'root'
-db_host = '172.17.0.2'
-db_name = 'ecommerce'
+db_user = 'userpython'
+db_password = '123'
+db_host = '127.0.0.1'
+db_name = 'db_icomerce'
 
 app.config['SQLALCHEMY_DATABASE_URI'] = f'mysql+pymysql://{db_user}:{db_password}@{db_host}/{db_name}'
 app.config['SQLALCHEMY_ECHO'] = True
@@ -57,6 +57,38 @@ class review(db.Model):
 def hello_world():
     return 'Hello World!'
 
+@app.route('/test')
+def test():
+    return 'pss'
+
+@app.route('/add_product', methods=['POST'])
+def add_product():
+    if request.method == 'POST':
+        try:
+            # Obtén los datos del cuerpo de la solicitud en formato JSON
+            data = request.get_json()
+
+            # Crea una nueva instancia de Product con los datos proporcionados
+            new_product = Product(
+                name=data['name'],
+                seller_id=int(data['seller_id']),
+                price=float(data['price'])
+                # Puedes agregar más campos según sea necesario
+            )
+
+            # Agrega el nuevo producto a la base de datos
+            db.session.add(new_product)
+            db.session.commit()
+
+            return jsonify({'message': 'Product added successfully!'}), 201  # 201 significa Created
+        except KeyError as e:
+            return jsonify({'error': f'Missing key: {str(e)}'}), 400  # 400 significa Bad Request
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500  # 500 significa Internal Server Error
+    else:
+        return 'Invalid request method'
+
+
 @app.route('/create_database')
 def create_database():  # put application's code here
     db.create_all()
@@ -64,4 +96,4 @@ def create_database():  # put application's code here
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=50001)
