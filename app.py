@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify  # Asegúrate de tener esta línea
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 db_user = 'userpython'
 db_password = '123'
@@ -115,7 +115,7 @@ def eliminar_producto(producto_id):
     db.session.commit()
 
     # Redirige a la lista de productos o a donde desees
-    return redirect(url_for('lista_de_productos'))
+    return "Delete succesfully"
 
 @app.route('/product/<string:cat>')
 def products_by_category(cat):
