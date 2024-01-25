@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="099448cd-41db-48c3-b331-77e0d2616896" name="Changes" comment="[CREATE] requirements.txt">
+    <list default="true" id="099448cd-41db-48c3-b331-77e0d2616896" name="Changes" comment="[UPDATE] Metodos de productos">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,6 +96,8 @@
       <workItem from="1705542518097" duration="4014000" />
       <workItem from="1705596032557" duration="193000" />
       <workItem from="1705642738087" duration="1334000" />
+      <workItem from="1705724357759" duration="2720000" />
+      <workItem from="1705852310190" duration="607000" />
     </task>
     <task id="LOCAL-00001" summary="[Create] project">
       <option name="closed" value="true" />
@@ -145,7 +147,31 @@
       <option name="project" value="LOCAL" />
       <updated>1705644070932</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[UPDATE] Metodos de productos">
+      <option name="closed" value="true" />
+      <created>1705724423812</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705724423812</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[UPDATE] Metodos de productos">
+      <option name="closed" value="true" />
+      <created>1705724480743</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705724480743</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[UPDATE] Metodos de productos">
+      <option name="closed" value="true" />
+      <created>1705724551981</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705724551981</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,9 +193,10 @@
     <MESSAGE value="[Create] database" />
     <MESSAGE value="[UPDATE] database" />
     <MESSAGE value="[CREATE] requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="[CREATE] requirements.txt" />
+    <MESSAGE value="[UPDATE] Metodos de productos" />
+    <option name="LAST_COMMIT_MESSAGE" value="[UPDATE] Metodos de productos" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/flaskProject$flaskProject.coverage" NAME="flaskProject Coverage Results" MODIFIED="1705643688047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/flaskProject$flaskProject.coverage" NAME="flaskProject Coverage Results" MODIFIED="1705724442571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
